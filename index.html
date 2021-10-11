@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<head>
+
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+
+<body>
+    
+    <div class="boardBackground">
+    <header>My task board</header>
+
+    <div id="mainCard">
+        <div class="textarea">
+            <textarea name="userTask" id="userTask" placeholder="Add your task..." cols="29" rows="7"></textarea>
+            <div class="dateAndTime">
+                <input type="date" min="2021-03-01" step="1"  id="userDate" >
+                <input type="time" id="userTime">
+                <input id="addBtn" type="button" onclick="onAddClicked()">
+            </div>
+            <div class="resetDelet">
+                <input id="resetBtn" type="button" value="Reset" onclick="onResetClicked()">
+                <input id="deleteAllTasksBtn" type="button" value="Delete all tasks" onclick="onDeleteAllClicked()">
+            </div>
+            <div class="markersBackground"></div>
+            <div id="userTask-error"></div>
+        </div>
+        
+        
+        <div id="container">
+            
+        </div>
+        
+    </div>
+
+    <script src="main.js"></script>
+
+</body>
+
+
+</html>
